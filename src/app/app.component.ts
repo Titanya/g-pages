@@ -53,8 +53,8 @@ export class AppComponent {
     if(!isSafari){
       console.log("non safari");
     //   window.open('tf1conso://'); app masbouba imchi w may7ilich store
-  // let page =  window.open('tf1conso://');
-   let page =  window.open('https://www.w3schools.com/');
+   let page =  window.open('tf1conso://');
+  // let page =  window.open('https://www.w3schools.com/');
    //page.document.body.style.backgroundColor = "red";
   let bodyStyle = window.getComputedStyle(page.document.body, null);
    let bgColor = bodyStyle.backgroundColor;
