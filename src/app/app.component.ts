@@ -52,28 +52,16 @@ export class AppComponent {
    // case non safari
     if(!isSafari){
       console.log("non safari");
+       window.open('tf1conso://');
       setTimeout(() => {
-       /* if(window.document.visibilityState == "hidden"){
+        if(window.document.visibilityState == "hidden"){
           hidden = true;
         }else{
            this.toStore();
-        }*/
-        window.location.href = 'tf1conso://';
-     //   window.location.href = 'https://play.google.com';
-        document.addEventListener("visibilitychange", function() {
-          console.log( document.visibilityState );
-          let vis = document.visibilityState;
-          if(vis  == "hidden"){
-             hidden = true;
-             return;
-          }else{
-            window.open("https://play.google.com/store/apps/details?id=fr.tf1.tf1conso&hl=en");
-            return;
-        }
-           
+        }           
 // document.getElementById("a-id").click();
          
-      });
+  
       }, 2000);
      
     }
