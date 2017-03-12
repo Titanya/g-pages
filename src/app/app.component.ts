@@ -53,13 +53,25 @@ export class AppComponent {
     if(!isSafari){
       console.log("non safari");
     //   window.open('tf1conso://'); app masbouba imchi w may7ilich store
-    window.open('yogoo://'); 
+  // let page =  window.open('tf1conso://');
+   let page =  window.open('https://www.w3schools.com/');
+   //page.document.body.style.backgroundColor = "red";
+  let bodyStyle = window.getComputedStyle(page.document.body, null);
+   let bgColor = bodyStyle.backgroundColor;
+   let hex = this.rgb2hex(bgColor);
+   console.log("body color "+ this.rgb2hex(bgColor));
+
+
+
+
       setTimeout(() => {
-        if(window.document.visibilityState == "hidden"){
-          hidden = true;
-        }else{
-           this.toStore();
-        }           
+        if(hex ==  '#000000'){
+          console.log("abyadh");
+          page.window.location.replace("https://play.google.com/store/apps/details?id=fr.tf1.tf1conso&hl=en");
+          // this.toStore(); 
+        }
+         
+                 
 // document.getElementById("a-id").click();
          
   
@@ -85,5 +97,14 @@ export class AppComponent {
         window.open("https://itunes.apple.com/fr/app/tf1-conso-coupons-reduction/id977958337?mt=8");
       }
   }
+
+//Function to convert hex format to a rgb color
+rgb2hex(rgb){
+ rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
+ return (rgb && rgb.length === 4) ? "#" +
+  ("0" + parseInt(rgb[1],10).toString(16)).slice(-2) +
+  ("0" + parseInt(rgb[2],10).toString(16)).slice(-2) +
+  ("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : '';
+}
 
 }
