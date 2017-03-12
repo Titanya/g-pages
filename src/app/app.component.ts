@@ -65,8 +65,10 @@ export class AppComponent {
           let vis = document.visibilityState;
           if(vis  == "hidden"){
              hidden = true;
+             return;
           }else{
             window.open("https://play.google.com/store/apps/details?id=fr.tf1.tf1conso&hl=en");
+            return;
         }
            
 // document.getElementById("a-id").click();
