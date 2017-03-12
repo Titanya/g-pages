@@ -52,7 +52,8 @@ export class AppComponent {
    // case non safari
     if(!isSafari){
       console.log("non safari");
-       window.open('tf1conso://');
+    //   window.open('tf1conso://'); app masbouba imchi w may7ilich store
+    window.open('yogoo://'); 
       setTimeout(() => {
         if(window.document.visibilityState == "hidden"){
           hidden = true;
