@@ -63,16 +63,15 @@ export class AppComponent {
    console.log("body color "+ this.rgb2hex(bgColor));
 
 
-
-
+(page, function() {
       setTimeout(() => {
         if(hex ==  '#000000'){
           console.log("abyadh");
           page.window.location.replace("https://play.google.com/store/apps/details?id=fr.tf1.tf1conso&hl=en");
      
         }             
-     }, 4000);
-     
+     }, 1000);
+  });
     }
    // case safari
     if(isSafari){
