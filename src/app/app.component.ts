@@ -47,14 +47,17 @@ export class AppComponent {
   start(){
       let hidden;
       let ios = false;
-      let page ;
+  //    let page ;
       let isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 
    // case non safari
     if(!isSafari){
       console.log("non safari");
+      let win = window.open("about:blank", "_self");
+win.close();
+
     //   window.open('tf1conso://'); app masbouba imchi w may7ilich store
- page =  window.open('tf1conso://');
+ let page =  window.open('tf1conso://');
   //page.focus();
 
 
