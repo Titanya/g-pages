@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { Cookie } from 'ng2-cookies/ng2-cookies';
+//import { Cookie } from 'ng2-cookies/ng2-cookies';
 
 @Component({
   selector: 'app-root',
@@ -11,10 +11,9 @@ export class AppComponent {
 
   
   //document.cookie = "username=John Doe";
-  get() {
+  /*get() {
   	Cookie.set('name', 'this is a cookie');
   let myCookie = Cookie.get('name');
-  Cookie.set('name', 'this is a cookie', 10 /*days from now*/);
    //console.log(document.cookie);
   console.log("cookie "+myCookie);
   console.log("in cookie");
@@ -23,11 +22,10 @@ export class AppComponent {
     start2() {
     Cookie.set('name', 'this is a cookie');
   let myCookie = Cookie.get('name');
-  Cookie.set('name', 'this is a cookie', 10 /*days from now*/);
    //console.log(document.cookie);
   console.log("cookie "+myCookie);
   console.log("in cookie");
-  }
+  }*/
 
 
     // get mobile opertaing system
