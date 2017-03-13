@@ -57,7 +57,9 @@ export class AppComponent {
       win.close();
 
     //   window.open('tf1conso://'); app masbouba imchi w may7ilich store
+    setTimeout(() => {
  let page =  window.open('tf1conso://');
+ }, 3000);
   //page.focus();
 
 
