@@ -72,26 +72,13 @@ export class AppComponent {
           // this.toStore(); 
         }             
 // document.getElementById("a-id").click();
-      }, 2000);
+      }, 900);
      
     }
    // case safari
     if(isSafari){
      console.log("safari");
-    //   window.open('tf1conso://'); app masbouba imchi w may7ilich store
-   let page =  window.open('tf1conso://');
-  let bodyStyle = window.getComputedStyle(page.document.body, null);
-   let bgColor = bodyStyle.backgroundColor;
-   let hex = this.rgb2hex(bgColor);
-   console.log("body color "+ this.rgb2hex(bgColor));
-      setTimeout(() => {
-        if(hex ==  '#000000'){
-          console.log("abyadh");
-          page.window.location.replace("https://itunes.apple.com/fr/app/tf1-conso-coupons-reduction/id977958337?mt=8"); 
-        }             
-// document.getElementById("a-id").click();
-      }, 2000);
-
+     this.toStore();
     }
   }
 
