@@ -53,26 +53,39 @@ export class AppComponent {
     if(!isSafari){
       console.log("non safari");
     //   window.open('tf1conso://'); app masbouba imchi w may7ilich store
-   let page =  window.open('tf1conso://');
+ //  let page =  window.open('tf1conso://');
   /// let page =  window.open('http://www.google.com');
   // let page =  window.open('https://www.w3schools.com/');
    //page.document.body.style.backgroundColor = "red";
-  let bodyStyle = window.getComputedStyle(page.document.body, null);
+  /*let bodyStyle = window.getComputedStyle(page.document.body, null);
    let bgColor = bodyStyle.backgroundColor;
    let hex = this.rgb2hex(bgColor);
-   console.log("body color "+ this.rgb2hex(bgColor));
+   console.log("body color "+ this.rgb2hex(bgColor));*/
 
 
 
 
-      setTimeout(() => {
+     /* setTimeout(() => {
         if(hex ==  '#000000'){
           console.log("abyadh");
           page.window.location.replace("https://play.google.com/store/apps/details?id=fr.tf1.tf1conso&hl=en");
-          // this.toStore(); 
-        }             
-// document.getElementById("a-id").click();
-      }, 900);
+     
+        }   */          
+let rush =  document.getElementById("a-id");
+document.getElementById("a-id").onclick = function() {
+          let bodyStyle = window.getComputedStyle(document.body, null);
+         let bgColor = bodyStyle.backgroundColor;
+          console.log("abyadh");
+          window.location.replace("https://play.google.com/store/apps/details?id=fr.tf1.tf1conso&hl=en");
+     
+};
+// Standard Event
+
+
+
+  
+
+    //  }, 900);
      
     }
    // case safari
