@@ -59,14 +59,7 @@ export class AppComponent {
     //   window.open('tf1conso://'); app masbouba imchi w may7ilich store
     setTimeout(() => {
  let page =  window.open('tf1conso://');
- }, 3000);
-  //page.focus();
-
-
-  /// let page =  window.open('http://www.google.com');
-  // let page =  window.open('https://www.w3schools.com/');
-   //page.document.body.style.backgroundColor = "red";
-  let bodyStyle = window.getComputedStyle(page.document.body, null);
+   let bodyStyle = window.getComputedStyle(page.document.body, null);
    let bgColor = bodyStyle.backgroundColor;
    let hex = this.rgb2hex(bgColor);
    console.log("body color "+ this.rgb2hex(bgColor));
@@ -78,6 +71,14 @@ export class AppComponent {
      
         }             
      }, 3000);
+ }, 1000);
+  //page.focus();
+
+
+  /// let page =  window.open('http://www.google.com');
+  // let page =  window.open('https://www.w3schools.com/');
+   //page.document.body.style.backgroundColor = "red";
+
      
    /* setTimeout(() => {
         if(window.document.visibilityState == "hidden"){
