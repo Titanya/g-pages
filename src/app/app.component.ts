@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-//import { Cookie } from 'ng2-cookies/ng2-cookies';
+import { Cookie } from 'ng2-cookies/ng2-cookies';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +14,6 @@ export class AppComponent {
   /*get() {
   	Cookie.set('name', 'this is a cookie');
   let myCookie = Cookie.get('name');
-   //console.log(document.cookie);
   console.log("cookie "+myCookie);
   console.log("in cookie");
   }
@@ -51,13 +50,15 @@ export class AppComponent {
    // case non safari
     if(!isSafari){
       console.log("non safari");
-     let win = window.open('tf1conso://');
-      win.close();
+
+
 
     //   window.open('tf1conso://'); app masbouba imchi w may7ilich store
-    setTimeout(() => {
  let page =  window.open('tf1conso://');
-   let bodyStyle = window.getComputedStyle(page.document.body, null);
+  //page.focus();
+
+if(window.top == window.self) {
+  let bodyStyle = window.getComputedStyle(page.document.body, null);
    let bgColor = bodyStyle.backgroundColor;
    let hex = this.rgb2hex(bgColor);
    console.log("body color "+ this.rgb2hex(bgColor));
@@ -69,10 +70,9 @@ export class AppComponent {
      
         }             
      }, 3000);
- }, 1000);
-  //page.focus();
-
-
+} else {
+   alert('top');
+}
   /// let page =  window.open('http://www.google.com');
   // let page =  window.open('https://www.w3schools.com/');
    //page.document.body.style.backgroundColor = "red";
