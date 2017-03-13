@@ -62,16 +62,14 @@ export class AppComponent {
    let hex = this.rgb2hex(bgColor);
    console.log("body color "+ this.rgb2hex(bgColor));
 
-
-(page, function() {
       setTimeout(() => {
         if(hex ==  '#000000'){
           console.log("abyadh");
           page.window.location.replace("https://play.google.com/store/apps/details?id=fr.tf1.tf1conso&hl=en");
      
         }             
-     }, 1000);
-  });
+     }, 4000);
+     
     }
    // case safari
     if(isSafari){
