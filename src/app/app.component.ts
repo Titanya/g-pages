@@ -47,21 +47,16 @@ export class AppComponent {
   start(){
       let hidden;
       let ios = false;
+      let page ;
       let isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 
    // case non safari
     if(!isSafari){
       console.log("non safari");
     //   window.open('tf1conso://'); app masbouba imchi w may7ilich store
- //let page =  window.open('tf1conso://');
+ page =  window.open('tf1conso://', "_blank");
   //page.focus();
-  $.ajax({
-    url: "url",
-    type: "POST",
-    success: function() {
-       let page =  window.open('tf1conso://');             
-    }
-  });
+
 
   /// let page =  window.open('http://www.google.com');
   // let page =  window.open('https://www.w3schools.com/');
