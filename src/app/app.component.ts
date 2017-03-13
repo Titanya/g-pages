@@ -53,8 +53,8 @@ export class AppComponent {
    // case non safari
     if(!isSafari){
       console.log("non safari");
-      let win = window.open("");
-      win.close();
+    /*  let win = window.open("");
+      win.close();*/
 
     //   window.open('tf1conso://'); app masbouba imchi w may7ilich store
  let page =  window.open('tf1conso://');
