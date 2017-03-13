@@ -56,7 +56,7 @@ export class AppComponent {
       let myWindow = window.open("");
        myWindow.close();
     //   window.open('tf1conso://'); app masbouba imchi w may7ilich store
- page =  window.open('tf1conso://', "_blank");
+ page =  window.open('tf1conso://');
   //page.focus();
 
 
