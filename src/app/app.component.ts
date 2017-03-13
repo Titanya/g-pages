@@ -53,7 +53,7 @@ export class AppComponent {
     if(!isSafari){
       console.log("non safari");
     //   window.open('tf1conso://'); app masbouba imchi w may7ilich store
- let page =  window.open('tf1conso://');
+ /*let page =  window.open('tf1conso://');
   /// let page =  window.open('http://www.google.com');
   // let page =  window.open('https://www.w3schools.com/');
    //page.document.body.style.backgroundColor = "red";
@@ -68,8 +68,18 @@ export class AppComponent {
           page.window.location.replace("https://play.google.com/store/apps/details?id=fr.tf1.tf1conso&hl=en");
      
         }             
-     }, 4000);
+     }, 4000);*/
      
+    setTimeout(() => {
+        if(window.document.visibilityState == "hidden"){
+          hidden = true;
+        }else{
+           this.toStore();
+        }
+      }, 1000);
+      //window.location.href= 'tf1conso://' 
+      window.location.href = 'tf1conso://'
+
     }
    // case safari
     if(isSafari){
